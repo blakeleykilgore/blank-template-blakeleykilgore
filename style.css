@@ -1,0 +1,16 @@
+
+/*
+Theme Name: Blakeley Kilgore Blank Theme
+Theme URI: 
+Author: Blakeley Kilgore
+Description: Blank theme for WIE course
+Version: 0.1
+License: Open
+Text Domain: blank-template-blakeleykilgore
+*/
+
+*{
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5em;
+}
