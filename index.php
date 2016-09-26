@@ -9,4 +9,3 @@
     <p>This is my WordPress template.</p>
 </body>
 </html>
-
