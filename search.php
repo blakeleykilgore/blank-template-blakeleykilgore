@@ -10,7 +10,10 @@ get_header(); ?>
 				while (have_posts()) : the_post(); ?> 									<h2><?php the_title(); ?></h2>
 					<?php the_content();
 				endwhile;
-			endif;
+        else : ?>
+  			<h1>Nothing Found</h1>
+  			<p>Sorry, but nothing matched your search criteria. Please try again with different search terms.</p>
+  		<?php endif;
 		?>
 		</div>
 		<div class="four columns">
