@@ -7,8 +7,11 @@
 			    while ( have_posts() ) {
 			        the_post(); ?>
 							<h3><?php the_title(); ?></h3>
-							<?php the_excerpt(); ?>
-			    	<?php
+							<?php
+							if ( has_post_thumbnail() ) {
+								the_post_thumbnail('thumbnail');
+							} 
+							the_excerpt();
 					} // end while
 			} // end if
 			?>
