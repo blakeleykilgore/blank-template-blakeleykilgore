@@ -8,9 +8,13 @@
 	<body>
 		<div class="container">
 			<header class="row">
-				<div class="twelve columns">
+				<div class="nine columns">
 					<h1><?php bloginfo('name'); ?></h1>
 					<p><?php bloginfo('description'); ?></p>
+				</div>
+				<!-- Add Search Form -->
+				<div class="three columns">
+					<?php get_search_form(); ?>
 				</div>
 			</header>
 			<!-- Add Menu Here -->
