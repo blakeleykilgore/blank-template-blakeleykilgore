@@ -1,14 +1,11 @@
 <?php
 /* Blakeley Kilgore Blank Template: Archive Page */
-
 get_header(); ?>
-
 <div class="row">
 	<div class="twelve columns">
 		<?php if ( have_posts() ) : ?>
 			<h2>Archives</h2>
-			<?php
-			// The Loop
+			<?php // The Loop
 			while ( have_posts() ) : the_post();?>
 			<!-- data context -->
 				<h2>
@@ -16,11 +13,11 @@ get_header(); ?>
 						<?php the_title(); ?>
 					</a>
 				</h2>
-				<?php the_excerpt(); ?>
+			<?php the_excerpt(); ?>
 			<?php endwhile; ?> <!-- End Loop -->
-    <?php else: ?>
-			<p>Sorry, no posts matched your criteria.</p>
-		<?php endif; ?>
+    	<?php else: ?>
+				<p>Sorry, no posts matched your criteria.</p>
+			<?php endif; ?>
 	</div>
 </div>
 <div class="row">

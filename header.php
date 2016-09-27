@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Blakeley Kilgore WordPress Template</title>
-<?php wp_head(); ?>
+		<?php wp_head(); ?>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	</head>
 	<body>

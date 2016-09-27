@@ -1,6 +1,5 @@
 <?php
 /*-------------- Enable Widgets--------------- */
-
 function blank_widgets_init() {
 	register_sidebar( array(
 		'name' => ('First Widget'),
@@ -12,7 +11,7 @@ function blank_widgets_init() {
 		'after_title' => '</h2>'
 		));
 /*--- New Widget --- */
-register_sidebar( array(
+	register_sidebar( array(
 		'name' => ('Footer Widget One'),
 		'id' => 'footer-widget-one',
 		'description' => 'Left widget for our footer',
@@ -46,7 +45,6 @@ register_sidebar( array(
 add_action('widgets_init', 'blank_widgets_init');
 /*-------------- Enable Menu --------------- */
 add_theme_support('menus');
-
 /*--- Enable Post Thumbnails ---*/
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 ?>
